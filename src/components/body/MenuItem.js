@@ -15,7 +15,14 @@ const MenuItem = (props) => {
           ></CardImg>
           <CardImgOverlay>
             <CardTitle
-              style={{ fontSize: "30px", color: "black", fontWeight: "bolder" }}
+              style={{
+                cursor: "pointer",
+                fontSize: "15px",
+                color: "black",
+                fontWeight: "bolder",
+              }}
+              // onClick={() => props.DishSelect(props.dish)}
+              onClick={props.DishSelect}
             >
               {props.dish.name}
             </CardTitle>
